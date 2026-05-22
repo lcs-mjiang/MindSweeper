@@ -10,6 +10,7 @@
 		1624C4432FBDED4D00F8E513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1624C43F2FBDED4D00F8E513 /* Assets.xcassets */; };
 		1624C4442FBDED4D00F8E513 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624C4402FBDED4D00F8E513 /* MainView.swift */; };
 		1624C4452FBDED4D00F8E513 /* MindSweeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624C4412FBDED4D00F8E513 /* MindSweeperApp.swift */; };
+		4CF7EAB52FC0E0AE008D3909 /* MindSweeperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7EAB42FC0E08E008D3909 /* MindSweeperView.swift */; };
 		AA200001000000000000AA01 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100001000000000000AA01 /* BoardModel.swift */; };
 		AA200002000000000000AA02 /* DeckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100002000000000000AA02 /* DeckManager.swift */; };
 		AA200003000000000000AA03 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100003000000000000AA03 /* GameState.swift */; };
@@ -28,6 +29,7 @@
 		1624C43F2FBDED4D00F8E513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1624C4402FBDED4D00F8E513 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1624C4412FBDED4D00F8E513 /* MindSweeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindSweeperApp.swift; sourceTree = "<group>"; };
+		4CF7EAB42FC0E08E008D3909 /* MindSweeperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindSweeperView.swift; sourceTree = "<group>"; };
 		AA100001000000000000AA01 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		AA100002000000000000AA02 /* DeckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckManager.swift; sourceTree = "<group>"; };
 		AA100003000000000000AA03 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		AA000001000000000000AA01 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4CF7EAB42FC0E08E008D3909 /* MindSweeperView.swift */,
 				1624C4412FBDED4D00F8E513 /* MindSweeperApp.swift */,
 				1624C4402FBDED4D00F8E513 /* MainView.swift */,
 			);
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF7EAB52FC0E0AE008D3909 /* MindSweeperView.swift in Sources */,
 				1624C4442FBDED4D00F8E513 /* MainView.swift in Sources */,
 				1624C4452FBDED4D00F8E513 /* MindSweeperApp.swift in Sources */,
 				AA200001000000000000AA01 /* BoardModel.swift in Sources */,

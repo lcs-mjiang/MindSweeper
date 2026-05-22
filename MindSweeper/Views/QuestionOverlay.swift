@@ -2,30 +2,57 @@ import SwiftUI
 
 struct QuestionOverlay: View {
     let card: Card
-    @Binding var playerAnswer: String
     let onSubmit: (String) -> Void
+    @Environment(\.dismiss) private var dismiss
+    
+    @State private var answer: String = ""
+    @State private var showHint: Bool = false
+    
+    @FocusState private var isInputFocused: Bool
 
     var body: some View {
-        // TODO: implement full question prompt and answer input UI
         VStack(spacing: 20) {
             Text(card.question)
                 .font(.title2)
                 .multilineTextAlignment(.center)
-            TextField("Your answer", text: $playerAnswer)
+                .padding(.top)
+
+            if let hint = card.hint {
+                Toggle("Show hint", isOn: $showHint)
+                    .padding(.horizontal)
+                
+                if showHint {
+                    Text(hint)
+                        .foregroundColor(.secondary)
+                        .italic()
+                }
+            }
+
+            TextField("Enter your answer", text: $answer)
                 .textFieldStyle(.roundedBorder)
+                .focused($isInputFocused)
+                .onSubmit {
+                    submitAnswer()
+                }
+                .padding(.horizontal)
+
             Button("Submit") {
-                onSubmit(playerAnswer)
+                submitAnswer()
             }
             .buttonStyle(.borderedProminent)
+            .padding(.bottom)
+            
+            Spacer()
         }
         .padding()
+        .onAppear {
+            isInputFocused = true
+            answer = ""
+        }
     }
-}
-
-#Preview {
-    QuestionOverlay(
-        card: Card(question: "What is 7 × 8?", answer: "56"),
-        playerAnswer: .constant(""),
-        onSubmit: { _ in }
-    )
+    
+    private func submitAnswer() {
+        onSubmit(answer)
+        dismiss() 
+    }
 }
