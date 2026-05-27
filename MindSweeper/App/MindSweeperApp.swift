@@ -1,4 +1,6 @@
 import SwiftUI
+import SwiftUI
+import SwiftData
 
 @main
 struct MindSweeperApp: App {
@@ -9,5 +11,7 @@ struct MindSweeperApp: App {
             MainView()
                 .environment(gameState)
         }
+        // Creates the local SQLite database automatically
+        .modelContainer(for: CustomDeck.self)
     }
 }

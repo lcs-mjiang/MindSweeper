@@ -4,7 +4,7 @@ import Combine
 struct BoardView: View {
 
     // MARK: - Stored properties
-
+    
     let subject: DeckManager.Subject
     var gameState: GameState
 
@@ -189,3 +189,4 @@ struct CellTile: View {
         BoardView(subject: .math, gameState: GameState())
     }
 }
+

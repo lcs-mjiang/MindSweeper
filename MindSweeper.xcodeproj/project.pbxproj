@@ -10,6 +10,9 @@
 		1624C4432FBDED4D00F8E513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1624C43F2FBDED4D00F8E513 /* Assets.xcassets */; };
 		1624C4442FBDED4D00F8E513 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624C4402FBDED4D00F8E513 /* MainView.swift */; };
 		1624C4452FBDED4D00F8E513 /* MindSweeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624C4412FBDED4D00F8E513 /* MindSweeperApp.swift */; };
+		4C4CDFE82FC777DE00C4FC01 /* CustomDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CDFE72FC777D500C4FC01 /* CustomDeck.swift */; };
+		4C4CDFEA2FC779D100C4FC01 /* CustomDeckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CDFE92FC779C700C4FC01 /* CustomDeckListView.swift */; };
+		4C4CDFEC2FC779FB00C4FC01 /* CustomDeckEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CDFEB2FC779E200C4FC01 /* CustomDeckEditorView.swift */; };
 		AA200001000000000000AA01 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100001000000000000AA01 /* BoardModel.swift */; };
 		AA200002000000000000AA02 /* DeckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100002000000000000AA02 /* DeckManager.swift */; };
 		AA200003000000000000AA03 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100003000000000000AA03 /* GameState.swift */; };
@@ -20,16 +23,29 @@
 		AF9CE1522FC219D60026C414 /* PresetDecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CE1512FC219C90026C414 /* PresetDecks.swift */; };
 		BB000002000000000000BB02 /* DeckManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000003000000000000BB03 /* DeckManagerTests.swift */; };
 		CC000001000000000000CC01 /* SubjectPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000002000000000000CC02 /* SubjectPickerView.swift */; };
-		EE000001000000000000EE01 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000002000000000000EE02 /* GameOverView.swift */; };
 		DD000003000000000000DD03 /* BoardModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD000001000000000000DD01 /* BoardModelTests.swift */; };
 		DD000004000000000000DD04 /* GameStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD000002000000000000DD02 /* GameStateTests.swift */; };
+		EE000001000000000000EE01 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000002000000000000EE02 /* GameOverView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB000008000000000000BB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1624C4292FBDED2500F8E513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1624C4302FBDED2500F8E513;
+			remoteInfo = MindSweeper;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1624C4312FBDED2500F8E513 /* MindSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1624C43F2FBDED4D00F8E513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1624C4402FBDED4D00F8E513 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1624C4412FBDED4D00F8E513 /* MindSweeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindSweeperApp.swift; sourceTree = "<group>"; };
+		4C4CDFE72FC777D500C4FC01 /* CustomDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDeck.swift; sourceTree = "<group>"; };
+		4C4CDFE92FC779C700C4FC01 /* CustomDeckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDeckListView.swift; sourceTree = "<group>"; };
+		4C4CDFEB2FC779E200C4FC01 /* CustomDeckEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDeckEditorView.swift; sourceTree = "<group>"; };
 		AA100001000000000000AA01 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		AA100002000000000000AA02 /* DeckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckManager.swift; sourceTree = "<group>"; };
 		AA100003000000000000AA03 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
@@ -41,20 +57,10 @@
 		BB000001000000000000BB01 /* MindSweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindSweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB000003000000000000BB03 /* DeckManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckManagerTests.swift; sourceTree = "<group>"; };
 		CC000002000000000000CC02 /* SubjectPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectPickerView.swift; sourceTree = "<group>"; };
-		EE000002000000000000EE02 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		DD000001000000000000DD01 /* BoardModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModelTests.swift; sourceTree = "<group>"; };
 		DD000002000000000000DD02 /* GameStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateTests.swift; sourceTree = "<group>"; };
+		EE000002000000000000EE02 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXContainerItemProxy section */
-		BB000008000000000000BB08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1624C4292FBDED2500F8E513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1624C4302FBDED2500F8E513;
-			remoteInfo = MindSweeper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1624C42E2FBDED2500F8E513 /* Frameworks */ = {
@@ -106,16 +112,6 @@
 			path = MindSweeper;
 			sourceTree = "<group>";
 		};
-		BB000007000000000000BB07 /* MindSweeperTests */ = {
-			isa = PBXGroup;
-			children = (
-				DD000001000000000000DD01 /* BoardModelTests.swift */,
-				BB000003000000000000BB03 /* DeckManagerTests.swift */,
-				DD000002000000000000DD02 /* GameStateTests.swift */,
-			);
-			path = MindSweeperTests;
-			sourceTree = "<group>";
-		};
 		AA000001000000000000AA01 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +140,8 @@
 		AA000004000000000000AA04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C4CDFEB2FC779E200C4FC01 /* CustomDeckEditorView.swift */,
+				4C4CDFE92FC779C700C4FC01 /* CustomDeckListView.swift */,
 				AA100006000000000000AA06 /* BoardView.swift */,
 				AA100007000000000000AA07 /* QuestionOverlay.swift */,
 				CC000002000000000000CC02 /* SubjectPickerView.swift */,
@@ -155,6 +153,7 @@
 		AA000005000000000000AA05 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4C4CDFE72FC777D500C4FC01 /* CustomDeck.swift */,
 				AA100003000000000000AA03 /* GameState.swift */,
 				AA100004000000000000AA04 /* Card.swift */,
 				AA100005000000000000AA05 /* Cell.swift */,
@@ -168,6 +167,16 @@
 				AF9CE1512FC219C90026C414 /* PresetDecks.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		BB000007000000000000BB07 /* MindSweeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD000001000000000000DD01 /* BoardModelTests.swift */,
+				BB000003000000000000BB03 /* DeckManagerTests.swift */,
+				DD000002000000000000DD02 /* GameStateTests.swift */,
+			);
+			path = MindSweeperTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,16 +277,19 @@
 			files = (
 				1624C4442FBDED4D00F8E513 /* MainView.swift in Sources */,
 				1624C4452FBDED4D00F8E513 /* MindSweeperApp.swift in Sources */,
+				4C4CDFE82FC777DE00C4FC01 /* CustomDeck.swift in Sources */,
 				AA200001000000000000AA01 /* BoardModel.swift in Sources */,
 				AA200002000000000000AA02 /* DeckManager.swift in Sources */,
 				AA200003000000000000AA03 /* GameState.swift in Sources */,
 				AA200004000000000000AA04 /* Card.swift in Sources */,
 				AA200005000000000000AA05 /* Cell.swift in Sources */,
+				4C4CDFEA2FC779D100C4FC01 /* CustomDeckListView.swift in Sources */,
 				AA200006000000000000AA06 /* BoardView.swift in Sources */,
 				AA200007000000000000AA07 /* QuestionOverlay.swift in Sources */,
 				AF9CE1522FC219D60026C414 /* PresetDecks.swift in Sources */,
 				CC000001000000000000CC01 /* SubjectPickerView.swift in Sources */,
 				EE000001000000000000EE01 /* GameOverView.swift in Sources */,
+				4C4CDFEC2FC779FB00C4FC01 /* CustomDeckEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

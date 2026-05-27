@@ -15,6 +15,12 @@ struct DeckManager {
         }
         cards.shuffle()
     }
+    mutating func loadCustomDeck(_ customDeck: CustomDeck) {
+            self.cards = customDeck.cards.map { customCard in
+                Card(question: customCard.question, answer: customCard.answer, hint: customCard.hint)
+            }
+            self.cards.shuffle()
+        }
 
     enum Subject: String, CaseIterable {
         case math, history, science, vocabulary

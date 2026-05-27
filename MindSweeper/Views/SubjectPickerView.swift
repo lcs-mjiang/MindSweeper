@@ -2,11 +2,7 @@ import SwiftUI
 
 struct SubjectPickerView: View {
 
-    // MARK: - Stored properties
-
     var gameState: GameState
-
-    // MARK: - Body
 
     var body: some View {
         VStack(spacing: 24) {
@@ -15,8 +11,6 @@ struct SubjectPickerView: View {
         }
         .padding()
     }
-
-    // MARK: - Subviews
 
     private var header: some View {
         VStack(spacing: 8) {
